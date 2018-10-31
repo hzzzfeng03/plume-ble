@@ -1,0 +1,33 @@
+{
+    "name": "PlumeBLE",
+    "version": "0.0.11",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "bluetooth": "*"
+    },
+    "files": [
+        "README.md",
+        "KeyValueService.cpp",
+        "KeyValueService.h",
+        "extension.cpp",
+        "extension.ts",
+        "shims.d.ts",
+        "enums.d.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "yotta": {
+        "optionalConfig": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0
+                }
+            }
+        }
+    },
+    "public": true,
+    "license": "MIT"
+}
